@@ -1,0 +1,25 @@
+[project]
+name = "llm-rag"
+version = "0.1"
+description = "Answer questions against collections stored in LLM using Retrieval Augmented Generation"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm"
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-rag"
+Changelog = "https://github.com/simonw/llm-rag/releases"
+Issues = "https://github.com/simonw/llm-rag/issues"
+CI = "https://github.com/simonw/llm-rag/actions"
+
+[project.entry-points.llm]
+rag = "llm_rag"
+
+[project.optional-dependencies]
+test = ["pytest"]
